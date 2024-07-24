@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav_bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+            
+        }
+        nav{
+            height: 10vh;
+            width: 100%;
+            
+            
+            
+            display: flex;
+            
+            justify-content: space-between;
+            align-items: center;
+            
+            box-shadow:2px 2px 5px rgb(171, 170, 170);
+
+
+        }
+        .left{
+            
+            height: 10vh;
+            width: 10%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: brown;
+            
+            
+        }
+        .center{
+            background-color: antiquewhite;
+        }
+        .center ul{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            gap: 10vh;
+
+            
+
+        }
+        .center ul li{
+            
+            list-style: none;
+            cursor: pointer;
+            
+            border-radius: 5px;
+            
+        }
+        .center ul li:hover{
+            background-color: black;
+            color: white;
+        }
+        .right{
+            height: 10vh;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .right ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            
+        }
+        .right ul li{
+            
+            gap: 3px;
+            list-style: none;
+            
+
+        }
+        .right ul li:hover{
+            background-color: cadetblue;
+            color: brown;
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">Felix</div>
+        <div class="center">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>CONTACT US</li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li><i class="fa-brands fa-facebook fa-2x"></i></li>
+                <li><i class="fa-brands fa-instagram fa-2x"></i></li>
+                <li><i class="fa-brands fa-youtube fa-2x"></i></li>
+            </ul>
+        </div>
+    </nav>
+    <img src="https://c4.wallpaperflare.com/wallpaper/208/717/198/dog-cat-kitten-puppy-hd-wallpaper-preview.jpg" height="650vh" width="100%" alt="">
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'Times New Roman', Times, serif;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: lightblue;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container{
+            background-color: white;
+            width: 400px;
+            border-radius: 30px;
+            padding: 25px;
+            text-align: center;
+
+        }
+
+        input{
+            width: 50%;
+            height: 30px;
+            border-radius: 6px;
+        }
+        button{
+            width: 50%;
+            height: 45px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: #78c1f3;
+            border-radius: 10px;
+            border: none;
+            color: #ffff;
+            margin-bottom: 20px;
+
+        }
+        button:hover{
+            background: #3998d9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>OTP Verifaction</h2>
+
+        <p>
+           
+               Please Verify code 
+        </p><br>
+    <input type="text" name="userotp" id="userotp"/><br><br>
+    <button type="button" onclick="verifyotp()" id="verifyBtn">Verify OTP</button>
+    </div>
+
+    <script>
+        let chances = 1;
+        let totalChances = 3;
+
+        function verifyotp(){
+            if(chances >= 3){
+                document.querySelector("#verifyBtn").style.display = "none";
+
+            }else{
+                const mainotp = parseInt(localStorage.getItem("mainotp"));
+                const userotp = parseInt(document.querySelector("#userotp").value);
+
+                if(mainotp === userotp){
+                    alert("Application Successful");
+                }else{
+                    alert("Application Failed");
+                    alert(`Total ${totalChances - chances} chances left`);
+                }
+            }
+            chances++;
+        }
+        localStorage.getItem("name");
+    </script>
+</body>
+</html>

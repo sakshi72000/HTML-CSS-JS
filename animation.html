@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+.main{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    
+    color: darkgray;
+    animation: anim1 5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes anim1{
+0%{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+25%{
+    position: relative;
+    left: 500px;
+    top: 0;
+    background-color: cadetblue;
+}
+50%{
+    position: relative;
+    left: 500px;
+    top: 0;
+    background-color: aquamarine;
+    rotate: 200deg;
+}
+75%{
+    position: relative;
+    left: 0;
+    top: 500px;
+    background-color: chartreuse;
+    rotate: 300deg;
+}
+100%{
+    position: relative;
+    top: 0;
+    left: 0;
+    rotate: 360deg;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+</body>
+</html>

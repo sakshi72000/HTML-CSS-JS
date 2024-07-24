@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan</title>
+</head>
+<body>
+    
+    <button onclick="generateotp()">Generate OTP</button>
+
+    <script>
+        function generateotp(){
+           var mainotp =  Math.round(Math.random()*20000)+20000;
+           localStorage.setItem("mainotp",mainotp);
+           alert(mainotp);
+           window.location.assign("conf.html");
+        }
+    </script>
+</body>
+</html>

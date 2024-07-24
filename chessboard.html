@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessBoard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 100vh;
+            width: 100vw;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            
+
+        }
+
+        .row1 {
+            display: flex;
+        }
+
+        .box {
+            height: 85px;
+            width: 85px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box:nth-child(even) {
+            background-color: black;
+        }
+
+        .row2 {
+            display: flex;
+        }
+
+        .box1 {
+            height: 85px;
+            width: 85px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box1:nth-child(odd) {
+            background-color: black;
+        }
+
+        .row3 {
+            display: flex;
+        }
+
+        .box2 {
+            height: 85px;
+            width: 85px;
+            background-color: white;
+            display: flex;
+        }
+
+        .box2:nth-child(even) {
+            background-color: black;
+        }
+
+        .row4 {
+            display: flex;
+        }
+
+        .box3 {
+            height: 85px;
+            width: 85px;
+            background-color: white;
+            display: flex;
+        }
+
+        .box3:nth-child(odd) {
+            background-color: black;
+        }
+
+        .row5 {
+            display: flex;
+        }
+
+        .box4 {
+            height: 85px;
+            width: 85px;
+            background-color: white;
+            display: flex;
+        }
+
+        .box4:nth-child(even) {
+            background-color: black;
+        }
+
+        .row6 {
+            display: flex;
+        }
+
+        .box5 {
+            height: 85px;
+            width: 85px;
+            background-color: white;
+            display: flex;
+        }
+
+        .box5:nth-child(odd) {
+            background-color: black;
+        }
+
+        .row7 {
+            display: flex;
+        }
+
+        .box6 {
+            height: 85px;
+            width: 85px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box6:nth-child(even) {
+            background-color: black;
+        }
+
+        .row8 {
+            display: flex;
+        }
+
+        .box7 {
+            height: 85px;
+            width: 85px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-color: black;
+            background-color: white;
+        }
+
+        .box7:nth-child(odd) {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="row1">
+            <div class="box" id="box1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnbgM2c5mUjUl4o78mlaTPE6LLE-a2KBaFYfNSqMh7CHlPck4fTJ419vOscu33ioa2jHc&usqp=CAU" height="70" width="70" alt=""></div>
+            <div class="box" id="box2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRT1wT5kTVIWyYC385Of3DEL_1TVsyq8cQfXzMoSWEcRzXAVkZ2Ffy86MpbgEymXn96T0&usqp=CAU" height="70" width="70" alt=""></div>
+            <div class="box" id="box3"><img src="https://t3.ftcdn.net/jpg/05/71/76/52/360_F_571765219_G83t2kxnTMfnE8A35fem9BigrqxOHCF7.jpg" height="70" width="70" alt=""></div>
+            <div class="box" id="box4"><img src="https://images-na.ssl-images-amazon.com/images/I/61lOtd+J8CL._AC_UL210_SR210,210_.jpg" height="70" width="70" alt=""></div>
+            <div class="box" id="box5"><img src="https://www.giantoutdoorchess.com/cdn/shop/products/20190319_142013_600x.jpg?v=1585183623" height="70" width="70" alt=""></div>
+            <div class="box" id="box6"><img src="https://t3.ftcdn.net/jpg/05/71/76/52/360_F_571765219_G83t2kxnTMfnE8A35fem9BigrqxOHCF7.jpg" height="70" width="70" alt=""></div>
+            <div class="box" id="box7"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRT1wT5kTVIWyYC385Of3DEL_1TVsyq8cQfXzMoSWEcRzXAVkZ2Ffy86MpbgEymXn96T0&usqp=CAU" height="70" width="70" alt=""></div>
+            <div class="box" id="box8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnbgM2c5mUjUl4o78mlaTPE6LLE-a2KBaFYfNSqMh7CHlPck4fTJ419vOscu33ioa2jHc&usqp=CAU" height="70" width="70" alt=""></div>
+        </div>
+
+        <div class="row2">
+            <div class="box1" id="box1"><img src="https://cdn.shopify.com/s/files/1/2209/1363/products/additional_megachess-50_3ebe465b-f18e-4e90-ad94-1c34e1b76652.png?v=1535644764" width="70" height="70" alt=""></div>
+            <div class="box1" id="box1"><img src="https://cdn.shopify.com/s/files/1/2209/1363/products/additional_megachess-50_3ebe465b-f18e-4e90-ad94-1c34e1b76652.png?v=1535644764" width="70" height="70" alt=""></div>
+            <div class="box1" id="box1"><img src="https://cdn.shopify.com/s/files/1/2209/1363/products/additional_megachess-50_3ebe465b-f18e-4e90-ad94-1c34e1b76652.png?v=1535644764" width="70" height="70" alt=""></div>
+            <div class="box1" id="box1"><img src="https://cdn.shopify.com/s/files/1/2209/1363/products/additional_megachess-50_3ebe465b-f18e-4e90-ad94-1c34e1b76652.png?v=1535644764" width="70" height="70" alt=""></div>
+            <div class="box1" id="box1"><img src="https://cdn.shopify.com/s/files/1/2209/1363/products/additional_megachess-50_3ebe465b-f18e-4e90-ad94-1c34e1b76652.png?v=1535644764" width="70" height="70" alt=""></div>
+            <div class="box1" id="box1"><img src="https://cdn.shopify.com/s/files/1/2209/1363/products/additional_megachess-50_3ebe465b-f18e-4e90-ad94-1c34e1b76652.png?v=1535644764" width="70" height="70" alt=""></div>
+            <div class="box1" id="Box1"><img src="https://www.megachess.com/cdn/shop/products/DSC_0037_600x600_crop_center.jpg?v=1535655792" width="70" height="70" alt=""></div>
+            <div class="box1" id="box1"><img src="https://www.megachess.com/cdn/shop/products/DSC_0037_600x600_crop_center.jpg?v=1535655792" width="70" height="70" alt=""></div>
+        </div>
+
+        <div class="row3">
+            <div class="box2" id="box2"></div>
+            <div class="box2" id="box2"></div>
+            <div class="box2" id="box2"></div>
+            <div class="box2" id="box2"></div>
+            <div class="box2" id="box2"></div>
+            <div class="box2" id="box2"></div>
+            <div class="box2" id="box2"></div>
+            <div class="box2" id="box2"></div>
+        </div>
+
+        <div class="row4">
+            <div class="box3" id="Box3"></div>
+            <div class="box3" id="box3"></div>
+            <div class="box3" id="box3"></div>
+            <div class="box3" id="box3"></div>
+            <div class="box3" id="box3"></div>
+            <div class="box3" id="box3"></div>
+            <div class="box3" id="box3"></div>
+            <div class="box3" id="box3"></div>
+        </div>
+
+        <div class="row5">
+            <div class="box4" id="box4"></div>
+            <div class="box4" id="box4"></div>
+            <div class="box4" id="box4"></div>
+            <div class="box4" id="box4"></div>
+            <div class="box4" id="box4"></div>
+            <div class="box4" id="box4"></div>
+            <div class="box4" id="box4"></div>
+            <div class="box4" id="box4"></div>
+        </div>
+
+        <div class="row6">
+            <div class="box5" id="box5"></div>
+            <div class="box5" id="box5"></div>
+            <div class="box5" id="box5"></div>
+            <div class="box5" id="box5"></div>
+            <div class="box5" id="box5"></div>
+            <div class="box5" id="box5"></div>
+            <div class="box5" id="box5"></div>
+            <div class="box5" id="box5"></div>
+        </div>
+
+        <div class="row7">
+            <div class="box6" id="box6"><img src="pawn-black.jpg" height="70" width="70" alt=""></div>
+            <div class="box6" id="box6"><img src="pawn-black.jpg" height="70" width="70" alt=""></div>
+            <div class="box6" id="box6"><img src="pawn-black.jpg" height="70" width="70" alt=""></div>
+            <div class="box6" id="box6"><img src="pawn-black.jpg" height="70" width="70" alt=""></div>
+            <div class="box6" id="box6"><img src="pawn-black.jpg" height="70" width="70" alt=""></div>
+            <div class="box6" id="box6"><img src="pawn-black.jpg" height="70" width="70" alt=""></div>
+            <div class="box6" id="box6"><img src="pawn-black.jpg" height="70" width="70" alt=""></div>
+            <div class="box6" id="box6"><img src="pawn-black.jpg" height="70" width="70" alt=""></div>
+        </div>
+
+        <div class="row8">
+            <div class="box7" id="box7"><img src="https://w7.pngwing.com/pngs/835/245/png-transparent-battle-checkmate-chess-figure-game-rook-chess-icon-thumbnail.png" height="70" width="70" alt=""></div>
+            <div class="box7" id="box7"><img src="https://p7.hiclipart.com/preview/1010/229/76/chess-piece-horse-knight-queen-chess-piece.jpg" height="70" width="70" alt=""></div>
+            <div class="box7" id="box7"><img src="https://www.shutterstock.com/image-vector/silhouetted-chess-piece-bishopvector-drawing-260nw-513678343.jpg" height="70" width="70" alt=""></div>
+            <div class="box7" id="box7"><img src="https://i.pinimg.com/736x/24/9b/d3/249bd3227344e49c8805a8f268f067ad.jpg" height="70" width="70" alt=""></div>
+            <div class="box7" id="box7"><img src="https://w7.pngwing.com/pngs/586/504/png-transparent-battle-chess-king-computer-icons-chess-piece-king-miscellaneous-game-king.png" height="70" width="70" alt=""></div>
+            <div class="box7" id="box7"><img src="https://www.shutterstock.com/image-vector/silhouetted-chess-piece-bishopvector-drawing-260nw-513678343.jpg" height="70" width="70" alt=""></div>
+            <div class="box7" id="box7"><img src="https://p7.hiclipart.com/preview/1010/229/76/chess-piece-horse-knight-queen-chess-piece.jpg" height="70" width="70" alt=""></div>
+            <div class="box7" id="box7"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBZT2JWRj0Jsp7iHrtyZc4HfwTfjPX9Cmjt6tfAwjqS2e9ljBHZkNevpvacvBdVakRpIg&usqp=CAU" height="70" width="70" alt=""></div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/d3330e149f.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
